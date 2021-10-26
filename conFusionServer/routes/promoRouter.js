@@ -1,12 +1,11 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const Promos = require('../models/promotion');
 
 const promoRouter = express.Router();
 
-promoRouter.use(bodyParser.json());
+promoRouter.use(express.json());
 
 /* For '/promotions' */
 
